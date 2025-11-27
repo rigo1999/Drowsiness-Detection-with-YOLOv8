@@ -2,6 +2,10 @@
 
 This project uses the YOLOv8 model to detect drowsiness in real-time from a video feed. When drowsiness is detected for a specified duration, an audio alert is played to wake up the person.
 
+## Author
+
+- **rigo1999** - Customized and maintained version
+
 ## Features
 
 - Real-time drowsiness detection using the YOLOv8 model.
@@ -26,12 +30,12 @@ This project uses the YOLOv8 model to detect drowsiness in real-time from a vide
 
 ## Usage
 
-1. Place your audio files (`a.mp3`, `b.mp3`, `c.mp3`, `d.mp3`, `e.mp3`) in the same directory as the script.
-2. Ensure that the YOLOv8 model file (`best.pt`) is in the same directory or provide the correct path.
+1. Place your audio files (`a.mp3`, `b.mp3`, `c.mp3`, `d.mp3`, `e.mp3`) in the `audio files/` directory.
+2. Ensure that the YOLOv8 model file (`best.pt`) is in the root directory or provide the correct path.
 3. Run the script:
 
     ```sh
-    python3 code.py
+    python main.py
     ```
 
 ## Code Overview
@@ -55,5 +59,6 @@ Manages the video capture from the webcam and integrates with the `DrowsinessDet
 
 ## Acknowledgements
 
+- Originally forked from [Siddharth Lanke's repository](https://github.com/siddharthlanke/Drowsiness-Detection-with-YOLOv8).
 - The YOLOv8 model is provided by [Ultralytics](https://github.com/ultralytics/yolov8).
 - Special thanks to the open-source community for the tools and libraries used in this project.
